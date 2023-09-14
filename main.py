@@ -1,5 +1,5 @@
 #this code will go into the Pico Pi once its set up with micropython
-
+#this code is a work in progress
 from machine import Pin
 from time import sleep
 import network #handles Wifi
@@ -13,7 +13,7 @@ wlan = network.WLAN(network.STA_IF)
 wlan.active(True)
 
 #sets passwords
-ssid = logins.iid
+ssid = logins.iid 
 password = logins.password
 #connects to the wifi
 wlan.connect(ssid,password)
